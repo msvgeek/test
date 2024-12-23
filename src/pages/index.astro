@@ -1,6 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import Hero from '~/components/widgets/Hero.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
@@ -10,7 +10,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'vGeek — Simplify & Secure IT For Your Business',
+  title: 'vGeek — IT for Humans',
   ignoreTitleTemplate: true,
 };
 ---
@@ -18,30 +18,19 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get Started',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:plug-connected',
-      },
-      { text: 'Learn more', href: '#features' },
-    ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'vGeek Hero Image' }}
-  >
-    <Fragment slot="title">
-      Simplify & Secure IT For Your Business
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">It's time to expect better.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">vGeek Managed Services</span>
-    </Fragment>
-  </Hero>
+  <Hero2
+  tagline="vGeek Technology Consulting"
+  title="Simplify & Secure IT For Your Business"
+  subtitle="IT for Humans"
+  actions={[
+    { variant: 'primary', text: 'Get Started ', href: '#', icon: 'tabler:plug-connected' },
+    { text: 'Learn more', href: '#' },
+  ]}
+  image={{
+    src: 'https://images.unsplash.com/photo-1621452773781-0f992fd1f5cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1626&q=80',
+    alt: 'Children telling a story. Long-form Sales Landing Page demo',
+  }}
+/>
 
   <!-- Note Widget ******************* -->
 
