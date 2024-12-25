@@ -5,7 +5,6 @@ import Features from '~/components/widgets/Features.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'vGeek — IT for Humans',
@@ -136,7 +135,7 @@ const metadata = {
     id="features"
     tagline="Features"
     title="What you get with vGeek"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    subtitle="Let's simplify your IT."
     items={[
       {
         title: 'Astro + Tailwind CSS Integration',
@@ -176,10 +175,6 @@ const metadata = {
       },
     ]}
   />
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    <HeroText tagline="Contact" title="Let's Connect!" />
 
   <ContactUs
     id="form"
@@ -206,5 +201,4 @@ const metadata = {
     }}
     description="Our support team typically responds within 2 business hours."
   />
-  </CallToAction>
 </Layout>
