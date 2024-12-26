@@ -5,6 +5,7 @@ import Features from '~/components/widgets/Features.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'vGeek — IT for Humans',
@@ -103,7 +104,7 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get onboarded now!"
+    title="Our process"
     isReversed
     items={[
       {
@@ -113,15 +114,21 @@ const metadata = {
         icon: 'tabler:address-book',
       },
       {
-        title: 'Step 2: <span class="font-medium">Discovery & Onboarding</span>',
+        title: 'Step 2: <span class="font-medium">Assess</span>',
         description:
-          "We'll get into every nook and cranny of your network and build out a plan trailored for your business.",
+          "We start by taking a good look at your network and provide you with a clear service proposal based on your needs.",
         icon: 'tabler:clock-search',
       },
       {
-        title: 'Step 3: <span class="font-medium">Relax!</span>',
+        title: 'Step 3: <span class="font-medium">Optimize</span>',
         description:
-          "You're in good hands now.",
+          "We thoroughly clean up and document your computer network so that we can manage and support it efficiently.",
+        icon: 'tabler:heart-cog',
+      },
+      {
+      title: 'Step 4: <span class="font-medium">Manage & Support</span>',
+        description:
+          "We install our remote support software and take over responsibility for managing your computer infrastructure.",
         icon: 'tabler:check',
       },
     ]}
@@ -130,6 +137,22 @@ const metadata = {
       alt: 'Steps image',
     }}
   />
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Book',
+        href: '#form',
+        target: '_blank',
+        icon: 'tabler:calendar-check',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Book now!
+    </Fragment>
+  </CallToAction>
 
     <!-- Features Widget *************** -->
 
@@ -181,7 +204,7 @@ const metadata = {
   <ContactUs
     id="form"
     title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    subtitle="Get in touch to find out more about vGeek and how we can help enable your organization with superior support, cybersecurity, cloud services and compliance."
     inputs={[
       {
         type: 'text',
