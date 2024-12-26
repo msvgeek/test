@@ -3,7 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import Prices from '~/components/widgets/Pricing.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
-
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'Pricing',
@@ -58,7 +58,7 @@ const metadata = {
             description: 'Travel rates are included',
           },
           {
-            description: '24/7/365 Support',
+            description: '24/7/365 support',
           },
           {
             description: 'Guaranteed response and resolution times',
@@ -73,16 +73,23 @@ const metadata = {
       {
         title: 'Custom',
         subtitle: 'For businesses with over 50 users',
-        price: 95,
-        period: 'Per Hour',
+        price: 'xx',
+        period: 'Per Month',
         items: [
           {
-            description: 'Includes everything available in "Fully Managed"',
+            description: 'Contact us for pricing!',
+          },
+          {
+            description: 'Includes everything available in Fully Managed',
           },
           {
             description: 'Plan built specifically for you',
           },
         ],
+        callToAction: {
+          text: 'Get a Quote',
+          href: 'https://www.vgeek.guru/contact',
+        },
       },    ]}
   />
   <!-- HeroText Widget ******************* -->
