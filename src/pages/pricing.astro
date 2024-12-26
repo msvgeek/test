@@ -25,32 +25,7 @@ const metadata = {
     title="Our prices"
     subtitle="Only pay for what you need"
     prices={[
-      {
-        title: 'Fully Managed',
-        subtitle: 'Optimal choice for small businesses',
-        price: 75,
-        period: 'Per User Per Month',
-        items: [
-          {
-            description: 'Fully managed IT infrastructure',
-          },
-          {
-            description: 'IT vendor management',
-          },
-          {
-            description: '24/7/365 Support',
-          },
-          {
-            description: 'Travel rates are included',
-          },
-          {
-            description: 'Servers are an additional $100 per Month',
-          },
-        ],
-        hasRibbon: true,
-        ribbonTitle: 'popular',
-      },
-      {
+            {
         title: 'Block Hours',
         subtitle: 'Available in 10-hour and and 25-hour blocks',
         price: 95,
@@ -70,7 +45,51 @@ const metadata = {
           },
         ],
       },
-    ]}
+      {
+        title: 'Fully Managed',
+        subtitle: 'Optimal choice for small businesses up to 50 users',
+        price: 75,
+        period: 'Per User Per Month',
+        items: [
+          {
+            description: 'Fully managed IT infrastructure',
+          },
+          {
+            description: 'Travel rates are included',
+          },
+          {
+            description: '24/7/365 Support',
+          },
+          {
+            description: 'Guaranteed response and resolution times',
+          },
+          {
+            description: 'Servers are an additional $50 per Month',
+          },
+        ],
+        hasRibbon: true,
+        ribbonTitle: 'popular',
+      },
+      {
+        title: 'Custom',
+        subtitle: 'For businesses with over 50 users',
+        price: 95,
+        period: 'Per Hour',
+        items: [
+          {
+            description: 'Includes everything available in "Fully Managed"',
+          },
+          {
+            description: 'Plan built specifically for you',
+          },
+          {
+            description: 'Monday-Friday 8AM-5PM',
+          },
+          {
+            description: 'Purchasing block hours does not guarantee service by a specific time',
+          },
+        ],
+      },    ]}
   />
   <!-- HeroText Widget ******************* -->
 
