@@ -1,6 +1,6 @@
 site:
-  name: vGeek
-  site: 'https://www.vgeek.guru'
+  name: CloudPathInnovations
+  site: 'https://www.cloudpathinnovations.com'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: vGeek
-    template: '%s — vGeek'
-  description: "vGeek Managed Services"
+    default: CloudPath Innovations
+    template: '%s — CloudPath'
+  description: "CloudPath Innovations"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: vGeek
+    site_name: CloudPath Innovations
     images:
       - url: '~/assets/images/default.png'
         width: 1200
