@@ -48,6 +48,10 @@ export const headerData = {
       text: 'Contact',
       href: getPermalink('/contact'),
     },
+    {
+      text: 'Client Portal',
+      href: 'https://invoices.cloudpathinnovations.com/client/login?company_key=DmwLOqnhAhdql7YUJ6vCLZ05EwnnJpex',
+    },
   ],
 };
 
