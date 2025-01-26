@@ -2,7 +2,6 @@
 import Layout from '~/layouts/PageLayout.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Features from '~/components/widgets/Features.astro';
-import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
@@ -26,10 +25,7 @@ const metadata = {
     { variant: 'primary', text: 'Get Connected ', href: 'https://www.cloudpathinnovations.com/#form', icon: 'tabler:plug-connected' },
     { text: 'Learn more', href: '#learn-more' },
   ]}
-  image={{
-    src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-    alt: 'CloudPath Hero Image',
-  }}
+image={{ src: '~/assets/images/cpi-postmark.webp', alt: 'CloudPath Innovations Hero Image' }}
 />
 
   <!-- Note Widget ******************* -->
@@ -65,7 +61,7 @@ const metadata = {
           "As part of your custom-built plan, you'll benefits from a range of our services.",
       },
     ]}
-    image={{ src: '~/assets/images/118-macbook.png', alt: 'Macbook image' }}
+    image={{ src: '~/assets/images/118-macbook.webp', alt: 'Macbook image' }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building simple, secure IT solutions</h3>
@@ -102,7 +98,7 @@ const metadata = {
           "We believe that technology should bring about a positive experience. That problems should be dealt with efficiently to bring rocking results - for now and into the future.",
       },
     ]}
-    image={{ src: '~/assets/images/day95-app-development.png', alt: 'Multiple mobile devices' }}
+    image={{ src: '~/assets/images/day95-app-development.webp', alt: 'Multiple mobile devices' }}
   >
     <Fragment slot="content">What is IT for Humans?</Fragment>
 
@@ -111,42 +107,6 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Steps Widget ****************** -->
-
-  <Steps
-    title="Our process"
-    isReversed
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Contact Us!</span>',
-        description:
-          "Reach out to schedule a discussion about your needs.",
-        icon: 'tabler:address-book',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Assess</span>',
-        description:
-          "We start by taking a good look at your network and provide you with a clear service proposal based on your needs.",
-        icon: 'tabler:clock-search',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Optimize</span>',
-        description:
-          "We thoroughly clean up and document your computer network so that we can manage and support it efficiently.",
-        icon: 'tabler:heart-cog',
-      },
-      {
-      title: 'Step 4: <span class="font-medium">Manage & Support</span>',
-        description:
-          "We install our remote support software and take over responsibility for managing your computer infrastructure.",
-        icon: 'tabler:check',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
-  />
   <Features2
   id="services"
     title="Explore our services"
