@@ -1,10 +1,10 @@
 site:
-  name: CloudPathInnovations
+  name: CloudPath Innovations
   site: 'https://www.cloudpathinnovations.com'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: Z3kBXIW4UPHFZKKEMNWFQMajQRRACH9GgrYX1AH-8Tc
 
 # Default SEO metadata
 metadata:
